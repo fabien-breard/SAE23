@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html lang="fr">
- <head>
-  <link rel="stylesheet" type="text/css" href="../styles/style-RWD.css" />
-  <link rel="icon" type="image/png" href="./médias/icon.jpg" /> <!-- Ceci est l'icone "IOT" sur l'onglet de la page du navigateur -->
-  <title>BGGS - SAÉ 23</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Cette ligne est utilisée pour bien gérer le RWD -->
-  <meta name="author" content="BGSS" />
-  <meta name="description" content="SAÉ23" />
-  <meta name="keywords" content="HTML, CSS" />
- </head>
- <body>
-
-  <header>
-   
-   <!--</header mobile>--> 
-   <nav>
-    <div class="dropdown">
-      <button class="boutonmenuprincipal">Menu</button>
-      <div class="dropdown-child">
-        <a href="../index.html">Accueil</a>
-        <a href="./administration.html"class="selected">Administration</a>
-		<a href="./Gestion.html">Gestion</a>
-		<a href="./Consultation.html">Consultation</a>
-        <a href="./Contact.html" >Contact</a>
-        <a href="./Mentions_légales.html"><i>Mentions légales</i></a>
-	  </div>
-    </div>
-	
-	<!--</header desktop>--> 
-         <ul>
-              <li><a href="../index.html">Accueil</a></li>
-              <li><a href="./Administration.html" class="selected">Administration</a></li>
-			  <li><a href="./Gestion.html">Gestion</a></li>
-			  <li><a href="./Consultation.html">Consultation</a></li>
-			  <li><a href="./Contact.html">Contact</a></li>
-              <li><a href="./Mentions_légales.html"><i>Mentions légales</i></a></li>
-         </ul>
-        </nav>
-        <h1>Page Administrateur</h1>
-      </header> 
-
-
-  <section id="Intro">
-    <h3>Ajout/suppression de bâtiments et capteurs </h3>
-  </section>
- 	
-<section>
-	...
-</section>
-  
+<html lang="fr">		<!-- Setting the language to french-->
+	<head>
+		<link rel="stylesheet" type="text/css" href="../styles/style-RWD.css" />	<!-- Line bindering HTML page with the CSS file-->
+		<link rel="icon" type="image/png" href="../medias/favicon.png" /> 	<!-- Thumbnail on the tab of the website-->
+		<title>SAÉ23 - Administration</title> 	<!-- Main title of the page-->
+  	<meta charset="utf-8"> 	<!--Encoding format for characters-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1" /> 	<!-- This line is necessary to handle well RWD display-->
+  	<meta name="author" content="BGSS" />			<!--Referencing stuff : The autors-->
+  	<meta name="description" content="SAÉ23" /> 		<!--Referencing stuff : Description of the content-->
+  	<meta name="keywords" content="HTML, CSS" />		<!--Referencing stuff : Keywords-->
+	</head>
+	<!--Beginning of the Web page-->
+	<body>
+  	<header>
+  		<!-- Browsing menu thaks to which we can surf between the pages of the website-->
+  		<nav>
+    		<div class="dropdown">
+      		<button class="boutonmenuprincipal">Menu</button>
+      		<div class="dropdown-child">
+        		<a href="../index.html">Accueil</a>
+        		<a href="./administration.html"class="selected">Administration</a>
+						<a href="./Gestion.html">Gestion</a>
+						<a href="./consultation.php">Consultation</a>
+        		<a href="./Contact.html" >Contact</a>
+        		<a href="./Mentions_légales.html"><i>Mentions légales</i></a>
+	  			</div>
+    		</div>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="./Administration.html" class="selected">Administration</a></li>
+			  	<li><a href="./Gestion.html">Gestion</a></li>
+			  	<li><a href="./consultation.php">Consultation</a></li>
+			  	<li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./Mentions_légales.html"><i>Mentions légales</i></a></li>
+        </ul>
+      </nav>
+      <h1>Espace Administrateur</h1>
+    </header> 
+  	<section id="Intro">
+    	<h3>Ajout/suppression de bâtiments et capteurs </h3>
+ 		</section>
+		<section>
+			<p>
+				<br />
+				<em><strong>Pour accéder à l'administration des batiments et des capteurs, veuillez entrez vos identiants : </strong></em>
+				<br />
+			<!-- Filling form-->
+			</p>
+			<form action="login.php" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Saisissez votre login :</legend>		<!-- Input your long-in -->
+					<label for="login">Login : </label>
+					<input type="text" name="login" id="login" />
+				</fieldset>
+				<fieldset>
+					<legend>Saisissez votre mot de passe :</legend>		<!-- Input your password -->
+					<label for="mdp">Mot de passe : </label>
+					<input type="password" name="mdp" id="mdp" />
+				</fieldset>
+				<p>
+					<!-- Choose what you want to manage -->
+					<input type="submit" value="Connexion aux batiments" name="choix" id="choix"/>		<!-- Button to login to buildings -->				
+					<input type="submit" value="Connexion aux capteurs" name="choix" id="choix"/>		<!-- Button to login to sensors -->
+				</p>
+			</form>
+		</section>
+		<div class=fige-bottom>
 <hr>
-  <p><em> Validation de la page HTML5 - CSS3 </em></p>
-	<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbreard.atwebpages.com%2FSA%25c3%258914%2Fpages%2FAbout_me.html" target="_blank"> 
-		<img width="100" src="../médias/html5-validator-badge-blue.png" alt="HTML5 Valide !" /></a>
 
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbreard.atwebpages.com%2FSA%25c3%258914%2Fstyles%2Fstyle-RWD.css" target="_blank">
-		<img width="100" src="../médias/vcss-blue.gif" alt="CSS Valide !"/></a>
-  
-  <footer>
-    <ul>
-      <li><a href="../pages/Contact.html" style="color:white;text-decoration: none;">BREARD / GARCIA / SAMITIER / SANA</a></li>
-      <li><b>SAÉ 23</b></li>
-      <li><a href="https://www.iut-blagnac.fr/fr/" style="color:white;text-decoration: none;" target="_blank">IUT de Blagnac </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-    </ul>  
-  </footer>
-  
+    <p><em> Validation de la page HTML5 - CSS3 </em></p>    <!-- HTML and CSS Validator-->
+    <a href="https://validator.w3.org/nu/" target="_blank"><img width="100" src="../medias/html5-validator-badge-blue.png" alt="HTML5 Valide !" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fbreard.atwebpages.com%2FSAE23%2Fstyles%2Fstyle-RWD.css" target="_blank"><img width="100" src="../medias/vcss-blue.gif" alt="CSS Valide !"/></a>
+    <footer>
+      <ul>
+        <li><a href="../pages/Contact.html" style="color:white;text-decoration: none;">BREARD / GARCIA / SAMITIER / SANA</a></li>
+        <li><b>SAÉ 23</b></li>
+        <li><a href="https://www.iut-blagnac.fr/fr/" style="color:white;text-decoration: none;" target="_blank">IUT de Blagnac </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>   <!-- Link to the website of our dear school-->
+      </ul>  
+    </footer>
   </body>
 </html>

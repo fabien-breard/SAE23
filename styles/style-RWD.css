@@ -74,6 +74,15 @@ h3 {
   font-weight:normal 
 }
 
+/* titles of sections in "Consultation" */
+h5 {
+  text-align: center;
+  font-size: 17px;
+  margin: 0px;
+  height: 40px;
+  padding-top: 12px;
+}
+
 /* section parties */
 section {
   padding-top: 35px;	
@@ -103,43 +112,28 @@ h1 {
   text-align: center;
 }
 
+/*h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px;
+  height: 40px;
+  padding-top: 12px; */
+}
+
 /* texte sections */
 .padding {
 padding-left: max(2vw,20px);
 padding-bottom: 20px;
 }
 
-/* RWD vidéo */
-.video-responsive {
-  max-width: 500px;
-  height: auto;
-}
-
-/* RWD logo parcours */
-.resp-logo-parcours {
-  float: right;
-  width: max(10vw, 100px);
-  height: auto;
-}
-
-/* RWD logo experiences */
-.resp-logo-experiences {
-  float: right;
-  height: auto;
-  width: max(6.5vw, 50px);
-}
-
- /* RWD image architechture */
- .image-responsive-archi {
-  width: 49%;
-  height: auto;
-  }
 
 /* RWD images */
 .image-responsive {
   width: 100%;
   height: auto;
   }
+
+
 
 /* bas de page */
 footer {
@@ -152,6 +146,13 @@ footer {
   background-color: #33333383;
   color: white;
 }
+
+/* Alignement button*/
+form
+{
+display: inline;
+}
+
 
 /* liste bas de page */
 footer ul li {
@@ -172,6 +173,61 @@ footer ul li:last-child {
 }
 
 
+
+/* table title*/
+Caption
+{
+	/*font-size: 15px;*/
+	border: 2px solid red;
+	/*color: rgb(40, 197, 111);*/
+	/*background-color: rgb(66, 52, 52);*/
+	margin-top : 10px;
+}
+
+
+th 
+{
+	/*font-size: 10px;*/
+	text-align: center;
+	border: 1px solid red;
+	/*background-color: blue;
+	height: 20px;*/
+}
+
+td 
+{
+
+
+	text-align: center;
+	border: 1px solid red;
+	/*background-color: grey;
+	height: 20px;*/
+}
+
+/* row table */
+tr
+{
+	/*font-size: 10px;
+	height: 25px;*/
+	text-align: center;
+	border: 1px solid red
+}
+
+/* managing tables */
+
+table {
+  margin-top:5px;
+  margin-left:2vw;
+  border-collapse: collapse;
+  display:inline;
+}
+
+.tableaux {
+  display:inline-table;
+  vertical-align: top;
+
+}
+
 /* max-width pour fortes résolutions */
 @media screen and (min-width: 1024px) {
 
@@ -185,6 +241,14 @@ footer ul li:last-child {
 		display: none;  
 	}
 
+  /* Footer fixe bas de page*/
+	.fige-bottom{
+		bottom:0;
+		position:absolute;
+		left:0;
+		right:0;
+		display:table-row;
+	}
 	
 }
 
@@ -212,6 +276,7 @@ footer ul li:last-child {
     h1 {
       font-size: 4.5vw;
     }
+
 
     /* affichage liste déroulante bouton menu */
     .dropdown {
@@ -274,17 +339,7 @@ footer ul li:last-child {
   font-style: italic;
   width: auto;
 }
-
-/* RWD image architecture */
-  .image-responsive-archi {
-		width: 100%;
-		height: auto;
-    }
-    
-    /* RWD vidéo */
-  .video-responsive {
-  max-width: 100%;
-  height: auto;
-  }
+   
+ 
 
 }
