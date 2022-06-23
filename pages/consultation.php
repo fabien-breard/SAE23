@@ -74,14 +74,14 @@
 							echo "<caption><i><u>Capteur :</u> $name</i></caption>";
 							echo '<tr><th>Date</th><th>Heure</th><th>Valeur</th></tr>';
 														
-							$reqmes = "SELECT * FROM `Mesure` WHERE `from` = '$name' ORDER BY `date` DESC, `hor` DESC LIMIT 1";
+							$reqmes = "SELECT * FROM `Mesure` WHERE `de` = '$name' ORDER BY `jour` DESC, `hor` DESC LIMIT 1";
 							$resmes = mysqli_query($id_bd, $reqmes);
 							
 							while($lignemes = mysqli_fetch_array($resmes))
 							{
 								extract($lignemes);
 								include("infovalue.php");
-								echo '<tr><td>'.$date.'</td><td>'.$hor.'</td><td>'.$value.' '.$unit.'</td></tr>';
+								echo '<tr><td>'.$jour.'</td><td>'.$hor.'</td><td>'.$value.' '.$unit.'</td></tr>';
 							
 							}
 							echo '</table>';

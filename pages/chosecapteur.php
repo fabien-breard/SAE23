@@ -145,7 +145,6 @@
 			</form>
 		</section>
 		
-
 <hr>
   <p><em> Validation de la page HTML5 - CSS3 </em></p>
 	<a href="https://validator.w3.org/nu/" target="_blank"> 
@@ -162,6 +161,5 @@
       <li><a href="https://www.iut-blagnac.fr/fr/" style="color:white;text-decoration: none;" target="_blank">IUT de Blagnac </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
     </ul>  
   </footer>
-  
  </body>
 </html>

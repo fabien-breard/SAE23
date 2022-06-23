@@ -57,5 +57,5 @@ do
 			fi
 		fi
 	fi
-/opt/lampp/bin/mysql -u samitier -pazertyuiop1230 -D SAE23 -e "INSERT INTO Mesure (`date`, `hor`, `value`, `from`) VALUES ('CURRENT_DATE', 'CURRENT_TIME', '$mesure', '$capteur');"
+/opt/lampp/bin/mysql -h localhost -u samitier -pazertyuiop1230 -D SAE23 -e "INSERT INTO Mesure (jour, hor, value, de) VALUES (CURRENT_DATE, CURRENT_TIME, '$mesure', '$capteur');"
 done

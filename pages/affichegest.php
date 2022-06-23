@@ -7,16 +7,16 @@
 
 <!DOCTYPE html>
 <html lang="fr">
- <head>
-  <link rel="stylesheet" type="text/css" href="../styles/style-RWD.css" />
-  <link rel="icon" type="image/png" href="../medias/favicon.png" /> <!-- This is icon on browser page tab -->
-  <title>SAÉ23 - Gestion</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- This line is used to properly handle the RWD -->
-  <meta name="author" content="BGSS" />
-  <meta name="description" content="SAÉ23" />
-  <meta name="keywords" content="HTML, CSS" />
- </head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../styles/style-RWD.css" />
+		<link rel="icon" type="image/png" href="../medias/favicon.png" /> <!-- This is icon on browser page tab -->
+		<title>SAÉ23 - Gestion</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- This line is used to properly handle the RWD -->
+  		<meta name="author" content="BGSS" />
+  		<meta name="description" content="SAÉ23" />
+  		<meta name="keywords" content="HTML, CSS" />
+ 	</head>
  <body>
 
   <header>
@@ -62,7 +62,7 @@
 				echo '</section>';
 				echo '<section>';
 				
-				$reqmes = "SELECT * FROM `Mesure` WHERE `date` >= '$date_start' AND `hor` >= '$time_start' AND `date` <= '$date_end' AND `hor` <= '$time_end' AND `from` LIKE '$capname'"; 
+				$reqmes = "SELECT * FROM `Mesure` WHERE `jour` >= '$date_start' AND `hor` >= '$time_start' AND `jour` <= '$date_end' AND `hor` <= '$time_end' AND `de` LIKE '$capname'"; 
 				$resultmes = mysqli_query($id_bd, $reqmes)
 					or die("Execution de la requete $resultmes impossible");
 					
@@ -86,7 +86,7 @@
 						{
 							extract($ligne);
 							include("infovalue.php");
-							echo '<tr><td>'.$date.'</td><td>'.$hor.'</td><td>'.$value.' '.$unit.'</td></tr>';
+							echo '<tr><td>'.$jour.'</td><td>'.$hor.'</td><td>'.$value.' '.$unit.'</td></tr>';
 						}
 					echo '</table>';
 					echo '<div>';
@@ -107,7 +107,6 @@
 	</section>
 
 <!-- we put a class in a "div" so that the footer touches the bottom of the screen -->
-<div class=fige-bottom>
 <hr>
   <p><em> Validation de la page HTML5 - CSS3 </em></p>
 	<a href="https://validator.w3.org/nu/" target="_blank"> 
@@ -124,7 +123,5 @@
       <li><a href="https://www.iut-blagnac.fr/fr/" style="color:white;text-decoration: none;" target="_blank">IUT de Blagnac </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
     </ul>  
   </footer>
-  </div>
-
  </body>
 </html>

@@ -91,19 +91,10 @@
 				while($ligne2=mysqli_fetch_array($resultcap))
 					{
 						extract($ligne2);
-						if ($i)
-							{
-								echo '<input type="radio" name="from" value="'.$name.'" id="'.$name.'" />';
-								echo '<label for="'.$name.'">'.$name.'</label>';
-								echo '<br>';
-								$i=false;
-							}
-						else
-							{
-								echo '<input type="radio" name="from" value="'.$name.'" id="'.$name.'" />';
-								echo '<label for="'.$name.'">'.$name.'</label>';
-								echo '<br>';
-							}
+							
+							echo '<input type="radio" name="from" value="'.$name.'" id="'.$name.'" />';
+							echo '<label for="'.$name.'">'.$name.'</label>';
+							echo '<br>';
 					}
 
 			#initialize the end date to the current date
@@ -130,7 +121,6 @@
 	</section>
 
 <!-- we put a class in a "div" so that the footer touches the bottom of the screen -->
-<div class=fige-bottom>
 <hr>
 	<p>
 		<em> Validation de la page HTML5 - CSS3 </em>
@@ -145,6 +135,5 @@
 			<li><a href="https://www.iut-blagnac.fr/fr/" style="color:white;text-decoration: none;" target="_blank">IUT de Blagnac </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 		</ul>
 	</footer>
-</div>
 </body>
 </html>
